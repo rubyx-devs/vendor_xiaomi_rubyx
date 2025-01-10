@@ -1611,6 +1611,8 @@ PRODUCT_PACKAGES += \
     s5khpxsemco_mipi_raw_IdxMgr \
     s5khpxsemco_mipi_raw_tuning \
     secure_element-impl \
+    libswgamedap \
+    libswvqe \
     vendor.dolby.hardware.dms@2.0-impl \
     vendor.mediatek.hardware.apuware.apusys@2.0 \
     vendor.mediatek.hardware.apuware.apusys@2.1 \
