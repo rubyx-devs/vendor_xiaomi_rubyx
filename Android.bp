@@ -19512,7 +19512,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/libsink.so"],
-			shared_libs: ["libshim_sink", "libbinder", "libcutils", "libgui", "libmedia", "libstagefright", "libstagefright_foundation", "libui", "libutils", "libcomutils", "libvcodec_cap", "libvt_avsync", "liblog", "libmedia_omx", "libaudioclient", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libaudioclient_shim", "libbinder", "libcutils", "libgui", "libmedia", "libstagefright", "libstagefright_foundation", "libui", "libutils", "libcomutils", "libvcodec_cap", "libvt_avsync", "liblog", "libmedia_omx", "libaudioclient", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
