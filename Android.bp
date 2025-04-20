@@ -419,11 +419,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libnvram.so"],
-			shared_libs: ["libcutils", "libbase", "liblog", "libnvram_sec", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbase_shim", "libcutils", "libbase", "liblog", "libnvram_sec", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libnvram.so"],
-			shared_libs: ["libcutils", "libbase", "liblog", "libnvram_sec", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbase_shim", "libcutils", "libbase", "liblog", "libnvram_sec", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
@@ -17817,7 +17817,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libsysenv.so"],
-			shared_libs: ["liblog", "libbase", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbase_shim", "liblog", "libbase", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -18524,23 +18524,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/s5khpxsemco_mipi_raw_tuning.so"],
 			shared_libs: ["liblog", "libcutils", "libCamera_s5khpxsemcomipiraw_3rd_Capture", "libCamera_s5khpxsemcomipiraw_Capture_LongExposure", "libCamera_s5khpxsemcomipiraw_Capture_LongExposure_Zoom1", "libCamera_s5khpxsemcomipiraw_Face_Capture", "libCamera_s5khpxsemcomipiraw_Face_Capture_200M", "libCamera_s5khpxsemcomipiraw_Face_Capture_50M", "libCamera_s5khpxsemcomipiraw_Face_Capture_Upscale", "libCamera_s5khpxsemcomipiraw_Face_Preview", "libCamera_s5khpxsemcomipiraw_Face_Preview_200M", "libCamera_s5khpxsemcomipiraw_Face_Preview_50M", "libCamera_s5khpxsemcomipiraw_Flash_A_Capture", "libCamera_s5khpxsemcomipiraw_Flash_A_Preview", "libCamera_s5khpxsemcomipiraw_Flash_A_Preview_zoom1", "libCamera_s5khpxsemcomipiraw_Flash_A_Preview_zoom2", "libCamera_s5khpxsemcomipiraw_Flash_Capture_Zoom1", "libCamera_s5khpxsemcomipiraw_Flash_Capture_Zoom2", "libCamera_s5khpxsemcomipiraw_Flash_Face_Capture", "libCamera_s5khpxsemcomipiraw_HDR_Face_Capture", "libCamera_s5khpxsemcomipiraw_HDR_Face_Capture_EV1", "libCamera_s5khpxsemcomipiraw_HDR_Scene_Capture", "libCamera_s5khpxsemcomipiraw_HDR_Scene_Capture_EV1", "libCamera_s5khpxsemcomipiraw_HDR_Scene_Capture_Zoom1", "libCamera_s5khpxsemcomipiraw_HDR_Scene_Capture_Zoom2", "libCamera_s5khpxsemcomipiraw_LLHDR_Face_Capture", "libCamera_s5khpxsemcomipiraw_LLHDR_Scene_Capture", "libCamera_s5khpxsemcomipiraw_LLHDR_Scene_Capture_Zoom1", "libCamera_s5khpxsemcomipiraw_LLHDR_Scene_Capture_Zoom2", "libCamera_s5khpxsemcomipiraw_Panorama_Capture", "libCamera_s5khpxsemcomipiraw_Portrait_Capture_Full", "libCamera_s5khpxsemcomipiraw_Portrait_Preview_Full", "libCamera_s5khpxsemcomipiraw_Preview_LongExposure", "libCamera_s5khpxsemcomipiraw_Professional_Face_Capture_200M", "libCamera_s5khpxsemcomipiraw_Professional_Face_Preview_200M", "libCamera_s5khpxsemcomipiraw_Professional_Scene_Capture_200M", "libCamera_s5khpxsemcomipiraw_Professional_Scene_Preview_200M", "libCamera_s5khpxsemcomipiraw_Professional_Video_1080P_EIS", "libCamera_s5khpxsemcomipiraw_QQ_Preview", "libCamera_s5khpxsemcomipiraw_Scene_Capture", "libCamera_s5khpxsemcomipiraw_Scene_Capture_200M", "libCamera_s5khpxsemcomipiraw_Scene_Capture_50M", "libCamera_s5khpxsemcomipiraw_Scene_Capture_Professional", "libCamera_s5khpxsemcomipiraw_Scene_Capture_Upscale", "libCamera_s5khpxsemcomipiraw_Scene_Capture_Zoom1", "libCamera_s5khpxsemcomipiraw_Scene_Capture_Zoom2", "libCamera_s5khpxsemcomipiraw_Scene_Preview", "libCamera_s5khpxsemcomipiraw_Scene_Preview_200M", "libCamera_s5khpxsemcomipiraw_Scene_Preview_50M", "libCamera_s5khpxsemcomipiraw_Scene_Preview_Zoom1", "libCamera_s5khpxsemcomipiraw_Scene_Preview_Zoom2", "libCamera_s5khpxsemcomipiraw_Scene_Professional_Preview", "libCamera_s5khpxsemcomipiraw_SuperNightRaw_Capture", "libCamera_s5khpxsemcomipiraw_SuperNightRaw_Capture_Zoom", "libCamera_s5khpxsemcomipiraw_SuperNightRaw_Preview", "libCamera_s5khpxsemcomipiraw_SuperNightRaw_Preview_Zoom1", "libCamera_s5khpxsemcomipiraw_SuperNightRaw_Preview_Zoom2", "libCamera_s5khpxsemcomipiraw_SuperNightSE_Capture", "libCamera_s5khpxsemcomipiraw_TikTok_Capture", "libCamera_s5khpxsemcomipiraw_Video_1080P", "libCamera_s5khpxsemcomipiraw_Video_1080P_120fps", "libCamera_s5khpxsemcomipiraw_Video_1080P_120fps_Zoom", "libCamera_s5khpxsemcomipiraw_Video_1080P_60fps", "libCamera_s5khpxsemcomipiraw_Video_1080P_60fps_Zoom1", "libCamera_s5khpxsemcomipiraw_Video_1080P_60fps_Zoom2", "libCamera_s5khpxsemcomipiraw_Video_1080P_EIS", "libCamera_s5khpxsemcomipiraw_Video_1080P_EIS_Zoom1", "libCamera_s5khpxsemcomipiraw_Video_1080P_EIS_Zoom2", "libCamera_s5khpxsemcomipiraw_Video_1080P_Zoom1", "libCamera_s5khpxsemcomipiraw_Video_4k", "libCamera_s5khpxsemcomipiraw_Video_4k_Zoom1", "libCamera_s5khpxsemcomipiraw_Video_4k_Zoom2", "libCamera_s5khpxsemcomipiraw_Video_720P", "libCamera_s5khpxsemcomipiraw_Video_720P_120fps", "libCamera_s5khpxsemcomipiraw_Video_720P_120fps_Zoom", "libCamera_s5khpxsemcomipiraw_Video_720P_240fps", "libCamera_s5khpxsemcomipiraw_Video_720P_240fps_Zoom", "libCamera_s5khpxsemcomipiraw_Video_720P_EIS", "libCamera_s5khpxsemcomipiraw_Video_720P_EIS_Zoom1", "libCamera_s5khpxsemcomipiraw_Video_720P_EIS_Zoom2", "libCamera_s5khpxsemcomipiraw_Video_Capture", "libCamera_s5khpxsemcomipiraw_Video_Vlog", "libCamera_s5khpxsemcomipiraw_WeChatQQ_Video", "libCamera_s5khpxsemcomipiraw_WeChat_Preview", "libCamera_s5khpxsemcomipiraw_XTS_Capture", "libCamera_s5khpxsemcomipiraw_XTS_Preview", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "secure_element-impl",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/secure_element-impl.so"],
-			shared_libs: ["libcutils", "liblog", "libhidlbase", "libhidltransport", "libutils", "android.hardware.secure_element@1.0", "libTEECommon", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -19317,23 +19300,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.microtrust.hardware.soter@1.0",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.microtrust.hardware.soter@1.0.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.microtrust.hardware.thh@2.0",
 	owner: "xiaomi",
 	strip: {
@@ -19393,10 +19359,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/libimsma.so"],
+			shared_libs: ["libbinder", "libcutils", "libgui", "libmedia", "libstagefright", "libstagefright_foundation", "libui", "libutils", "libsink-mtk", "libsource", "libvcodec_cap", "libimsma_rtp", "libcomutils", "liblog", "libsignal", "libnetd_client", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 	system_ext_specific: true,
 }
@@ -19504,14 +19470,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libsink",
+	name: "libsink-mtk",
 	owner: "xiaomi",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/system_ext/lib64/libsink.so"],
+			srcs: ["proprietary/system_ext/lib64/libsink-mtk.so"],
 			shared_libs: ["libaudioclient_shim", "libbinder", "libcutils", "libgui", "libmedia", "libstagefright", "libstagefright_foundation", "libui", "libutils", "libcomutils", "libvcodec_cap", "libvt_avsync", "liblog", "libmedia_omx", "libaudioclient", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -20061,25 +20027,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron"],
-			shared_libs: ["libfmq", "libgralloc_extra", "libhardware", "libhidlbase", "libhidlmemory", "libnativewindow", "libneuralnetworks", "libtextclassifier_hash", "libneuropilot_hal_utils", "libutils", "libprocessgroup", "android.hardware.neuralnetworks@1.0", "android.hardware.neuralnetworks@1.1", "android.hidl.allocator@1.0", "android.hidl.memory@1.0", "android.hardware.neuralnetworks@1.2", "android.hardware.neuralnetworks@1.3", "libbase", "liblog", "libion", "libion_mtk", "libcutils", "libneuron_platform", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "android.hardware.secure_element@1.2-service-mediatek",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek"],
-			shared_libs: ["vendor.mediatek.hardware.mtkradioex@2.0", "libhidlbase", "libutils", "android.hardware.secure_element@1.0", "android.hardware.secure_element@1.1", "android.hardware.secure_element@1.2", "libcutils", "liblog", "android.hardware.radio@1.0", "android.hardware.radio@1.1", "android.hardware.radio@1.2", "android.hardware.radio@1.3", "android.hardware.radio@1.4", "vendor.mediatek.hardware.mtkradioex@3.0", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbase_shim", "libfmq", "libgralloc_extra", "libhardware", "libhidlbase", "libhidlmemory", "libnativewindow", "libneuralnetworks", "libtextclassifier_hash", "libneuropilot_hal_utils", "libutils", "libprocessgroup", "android.hardware.neuralnetworks@1.0", "android.hardware.neuralnetworks@1.1", "android.hidl.allocator@1.0", "android.hidl.memory@1.0", "android.hardware.neuralnetworks@1.2", "android.hardware.neuralnetworks@1.3", "libbase", "liblog", "libion", "libion_mtk", "libcutils", "libneuron_platform", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -20206,42 +20154,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service"],
 			shared_libs: ["libhidlbase", "libhidltransport", "liblog", "libutils", "libhardware", "vendor.mediatek.hardware.pq@2.14", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "vendor.microtrust.hardware.se@1.0-service",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/vendor.microtrust.hardware.se@1.0-service"],
-			shared_libs: ["libcutils", "liblog", "libhidlbase", "libhidltransport", "libutils", "libutilscallstack", "android.hardware.secure_element@1.0", "libTEECommon", "libhardware", "libbase", "libhwbinder", "vendor.xiaomi.hardware.mtdservice@1.0", "secure_element-impl", "libcrypto", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "vendor.microtrust.hardware.soter@1.0-service",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/vendor.microtrust.hardware.soter@1.0-service"],
-			shared_libs: ["liblog", "libcutils", "libbase", "libutils", "libhardware", "libhidlbase", "vendor.microtrust.hardware.soter@1.0", "libTEECommon", "libssl", "wechat.beanpod", "libcrypto", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
