@@ -19589,30 +19589,6 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-	name: "HotwordEnrollmentOKGoogleRISCV",
-	owner: "xiaomi",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentOKGoogleRISCV.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
-	name: "HotwordEnrollmentXGoogleRISCV",
-	owner: "xiaomi",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleRISCV/HotwordEnrollmentXGoogleRISCV.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
 	name: "ImsService",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/priv-app/ImsService/ImsService.apk",
@@ -19672,13 +19648,6 @@ dex_import {
 	jars: ["proprietary/framework/mediatek-telephony-common.jar"],
 }
 
-dex_import {
-	name: "com.android.hotwordenrollment.common.util",
-	owner: "xiaomi",
-	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
-	system_ext_specific: true,
-}
-
 prebuilt_etc_xml {
 	name: "android.hardware.neuralnetworks@1.3-service-mtk-mdla-dsp-gpu.xml",
 	owner: "xiaomi",
@@ -19728,15 +19697,6 @@ prebuilt_etc_xml {
 	name: "manifest_media_c2_V1_1_default.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "manifest_microtrust_wechat.xml",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_microtrust_wechat.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,

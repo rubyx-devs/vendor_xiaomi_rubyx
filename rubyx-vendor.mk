@@ -1668,8 +1668,6 @@ PRODUCT_PACKAGES += \
     libvt_avsync \
     vendor.mediatek.hardware.videotelephony-V1-ndk \
     vendor.mediatek.hardware.videotelephony@1.0 \
-    HotwordEnrollmentOKGoogleRISCV \
-    HotwordEnrollmentXGoogleRISCV \
     ImsService \
     mediatek-common \
     mediatek-framework \
@@ -1679,14 +1677,12 @@ PRODUCT_PACKAGES += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
-    com.android.hotwordenrollment.common.util \
     android.hardware.neuralnetworks@1.3-service-mtk-mdla-dsp-gpu.xml \
     fod.xml \
     gnss-mtk.xml \
     gnss@2.1-service.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
     manifest_media_c2_V1_1_default.xml \
-    manifest_microtrust_wechat.xml \
     manifest_vendor.dolby.hardware.dms.xml \
     microtrust_thh_manifest.xml \
     batterysecret \
